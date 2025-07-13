@@ -1,0 +1,25 @@
+/credentials
+*.env*
+
+node_modules
+package-lock.json
+
+# dist
+build
+
+.env
+.env.prod
+*.log
+*.local
+.vscode
+.idea
+.DS_Store
+
+.*temp*
+*temp.*
+
+_credentials
+backups
+uploads
+temp
+tmp

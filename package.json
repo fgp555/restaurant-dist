@@ -1,0 +1,29 @@
+{
+  "name": "restaurant-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "npx ts-node-dev --respawn src/main.ts",
+    "dev": "npx nodemon",
+    "start": "node dist/main.js",
+    "build": "node scripts/clean-dist.js && tsc",
+    "deploy": "cd ../restaurant-dist && git add . && git commit --amend --no-edit && git push --force"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.0",
+    "express": "^5.1.0",
+    "googleapis": "^150.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemailer": "^7.0.4",
+    "reflect-metadata": "^0.2.2",
+    "socket.io": "^4.8.1",
+    "typeorm": "^0.3.25"
+  }
+}
